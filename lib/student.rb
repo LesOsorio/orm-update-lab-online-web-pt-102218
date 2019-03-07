@@ -52,8 +52,8 @@ class Student
     id = row[0]
     name = row[1]
     grade = row[2]
-    self.new(name, grade, id)
-  end 
+    self.new(id, name, grade)
+  end
 
   def update
     sql = "UPDATE students SET name = ?, grade = ? WHERE id = ?"
